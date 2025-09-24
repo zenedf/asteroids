@@ -15,13 +15,18 @@ def main():
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
     dt = 0 # Delta time
-    
+    updateable = pygame.sprite.Group()
+    drawable = pygame.sprite.Group()
+    Player.containers = (updateable, drawable)
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     
-    
     while (True):
+        ms = clock.tick(60)  # milliseconds = Cap the frame rate at 60 FPS
+        dt = ms / 1000  # delta_time = Convert milliseconds to seconds
+        updateable.update(dt)
         screen.fill("black")  # Clear screen with black
-        player.draw(screen)
+        for sprite in drawable:
+            sprite.draw(screen)
         pygame.display.flip()   # Refresh the screen
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
