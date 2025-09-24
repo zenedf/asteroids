@@ -44,5 +44,8 @@ class Player(CircleShape):
         if keys[pygame.K_s]:
             self.move(-dt)
         if keys[pygame.K_SPACE]:
+            # Shot every 0.3 seconds
             if self.timer < 0:
-                self.shoot()    
+                self.shoot()
+            # rapid fire    
+            # self.shoot()
