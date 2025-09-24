@@ -7,6 +7,7 @@ draw the game to the screen
 """
 
 import pygame
+
 from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
