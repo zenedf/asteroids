@@ -10,7 +10,7 @@ from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
 from constants import *
-# from circleshape import CircleShape
+from circleshape import CircleShape
 
 
 def main():
@@ -34,10 +34,15 @@ def main():
         ms = clock.tick(60)  # milliseconds = Cap the frame rate at 60 FPS
         dt = ms / 1000  # delta_time = Convert milliseconds to seconds
         updateable.update(dt)
+        for asteroid in asteroids:
+            if player.is_colliding(asteroid):
+                print("Collision!")
+                return
         screen.fill("black")  # Clear screen with black
         for sprite in drawable:
             sprite.draw(screen)
         pygame.display.flip()   # Refresh the screen
+        
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
