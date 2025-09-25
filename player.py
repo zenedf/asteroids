@@ -47,5 +47,5 @@ class Player(CircleShape):
             # Shot every 0.3 seconds
             if self.timer < 0:
                 self.shoot()
-            # rapid fire    
+            # rapid fire
             # self.shoot()
