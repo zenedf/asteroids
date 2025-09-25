@@ -25,3 +25,6 @@ class CircleShape(pygame.sprite.Sprite):
     def update(self, dt):
         # sub-classes must override
         pass
+    
+    def get_position(self):
+        return self.position

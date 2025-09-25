@@ -4,7 +4,6 @@ This file lists high-level tasks and ideas for the asteroids project. Use this a
 
 ## Priorities (short-term)
 
-- [?] Make the game runnable from the project root using `python main.py` or `uv run python main.py`.
 - [ ] Add a `run.py` wrapper or package `asteroids` so the project can be executed with `python -m asteroids`.
 - [ ] Add basic audio (thrust sounds, explosion)
 - [ ] Create keyboard remapping / input settings

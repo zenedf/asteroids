@@ -13,6 +13,9 @@ class Asteroid(CircleShape):
             random.randint(0, 255)
         ) 
 
+    # def get_position(self):
+    #     return (self.position.x, self.position.y)
+
     def draw(self, screen):
         # remove the 'width' to fill the circle
         pygame.draw.circle(screen, self.__color, self.position, self.radius, 2)
