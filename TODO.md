@@ -29,6 +29,7 @@ This file lists high-level tasks and ideas for the asteroids project. Use this a
 - [ ] Packaging into an executable (PyInstaller) for distribution
 - [ ] Add joystick/gamepad support
 - [ ] Online high score board (backend)
+- [ ] Refactor the signatures to add the input and return types
 
 
 ---
