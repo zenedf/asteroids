@@ -8,9 +8,9 @@ class Asteroid(CircleShape):
         super().__init__(x, y, radius)
         # random r,g,b
         self.__color = (
-            random.randint(0, 255),
-            random.randint(0, 255),
-            random.randint(0, 255)
+            random.randint(0, 200),
+            random.randint(0, 200),
+            random.randint(0, 200)
         ) 
 
     # def get_position(self):
