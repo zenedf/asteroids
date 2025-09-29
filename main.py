@@ -15,6 +15,7 @@ from circleshape import CircleShape
 from shot import Shot
 from coordinates import display_coords
 
+
 def test_coords(screen, font, player, asteroids):
             # Display coordinates for different objects
             display_coords(screen, font, player, "yellow")
@@ -63,7 +64,7 @@ def main():
             sprite.draw(screen)
 
         # Display coordinates for debugging
-        # test_coords(screen, font, player, asteroids)
+        test_coords(screen, font, player, asteroids)
 
         # Refresh the screen
         pygame.display.flip()

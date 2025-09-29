@@ -1,3 +1,5 @@
+
+
 def display_coords(screen, font, obj, color="yellow", offset_y=-40):
     """Display coordinates above any object type.
     
