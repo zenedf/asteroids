@@ -64,7 +64,7 @@ def main():
             sprite.draw(screen)
 
         # Display coordinates for debugging
-        test_coords(screen, font, player, asteroids)
+        # test_coords(screen, font, player, asteroids)
 
         # Refresh the screen
         pygame.display.flip()
