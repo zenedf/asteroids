@@ -2,4 +2,4 @@
 A remake of asteroids using pygame
 
 This was a project in boot.dev
-I will continue to work on it to get better at pygame
+I added some simple color changes to the asteroids as well as displaying coordinate information for testing.
